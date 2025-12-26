@@ -1,7 +1,17 @@
+:root {
+  --color-primary: #6B4D57;
+  --color-secondary: #16a34a;
+  --color-background: #EFF9F0;
+}
+
+
+
 * {
   margin: 0;
   padding: 0;
-}
+  background-color: var(--color-background);
+  font-family: 'Inter';
+  }
 
 header {
   width: 100%;
@@ -13,12 +23,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
+
+.navbar>h2{
+  font-family: 'Jim Nightshade';
+  font-weight: 300;
+  font-size: 36px;
+  color: var(--color-primary);
+}
+
 
 .navlinks-container > ul {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .navlinks-container > ul > li {
@@ -27,17 +46,22 @@ header {
   padding: 0;
 }
 
+.navlinks-container > ul > .active > a {
+  text-decoration: underline;
+}
+
 .navlinks-container > ul > li > a {
   text-decoration: none;
-  color: #000;
+  color: var(--color-primary);
+  font-size: 20px;
 }
 
 .login-btn {
-  background-color: black;
+  background-color: var(--color-primary);
   border: none;
   color: white;
   padding: 10px 20px;
   border-radius: 9999999px;
-  font-size: 16px;
+  font-size: 20px;
   
 }
